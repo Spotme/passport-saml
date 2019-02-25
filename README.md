@@ -124,6 +124,7 @@ type Profile = {
   * `authnRequestsSigned`: if truthy, the `AuthnRequestsSigned="true"` attribute will be added to the metadata tag `SPSSODescriptor`.
   * `wantAssertionsSigned`: if truthy, the `WantAssertionsSigned="true"` attribute will be added to the metadata tag `SPSSODescriptor`.
   * `wantAssertionsEncrypted`: if truthy, the `WantAssertionsEncrypted="true"` attribute will be added to the metadata tag `SPSSODescriptor`.
+  * `assertionConsumerServiceIndex`: if provided, overrides the `AssertionConsumerService` index in the generated metadata (defaults to `1`).
  * **InResponseTo Validation**
   * `validateInResponseTo`: if truthy, then InResponseTo will be validated from incoming SAML responses
   * `requestIdExpirationPeriodMs`: Defines the expiration time when a Request ID generated for a SAML request will not be valid if seen in a SAML response in the `InResponseTo` field.  Default is 8 hours.
